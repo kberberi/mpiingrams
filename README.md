@@ -9,7 +9,7 @@ provides implementations of different methods to compute n-gram statistics
 using Apache Hadoop. For a detailed description of the methods and an
 experimental comparison of them on different datasets, please refer to:
 
-Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce,
+Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce,\
 Proceedings of 16th International Conference on Extending Database Technology (EDBT 2013),
 2013
 http://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf
