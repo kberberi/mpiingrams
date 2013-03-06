@@ -536,7 +536,7 @@ public class NGAprioriIndex extends Configured implements Tool {
             job4.setMapOutputValueClass(IntWritable.class);
             job4.setOutputKeyClass(IntArrayWritable.class);
             job4.setOutputValueClass(IntWritable.class);
-            job4.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstTwo.class);
+            job4.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstOnly.class);
             job4.setSortComparatorClass(IntArrayWritable.DefaultComparator.class);
 
             // start job
@@ -571,7 +571,7 @@ public class NGAprioriIndex extends Configured implements Tool {
             job5.setMapOutputValueClass(IntWritable.class);
             job5.setOutputKeyClass(IntArrayWritable.class);
             job5.setOutputValueClass(IntWritable.class);
-            job5.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstTwo.class);
+            job5.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstOnly.class);
             job5.setSortComparatorClass(IntArrayWritable.DefaultComparator.class);
 
             // start job

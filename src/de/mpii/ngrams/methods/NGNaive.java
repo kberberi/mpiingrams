@@ -238,7 +238,7 @@ public class NGNaive extends Configured implements Tool {
         job1.setMapOutputValueClass(IntWritable.class);
         job1.setOutputKeyClass(IntArrayWritable.class);
         job1.setOutputValueClass(IntWritable.class);
-        job1.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerComplete.class);
+        job1.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstOnly.class);
         job1.setSortComparatorClass(IntArrayWritable.DefaultComparator.class);
 
         // start job

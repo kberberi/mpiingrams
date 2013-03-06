@@ -274,7 +274,7 @@ public class NGAprioriScan extends Configured implements Tool {
             job2.setMapOutputValueClass(IntWritable.class);
             job2.setOutputKeyClass(IntArrayWritable.class);
             job2.setOutputValueClass(IntWritable.class);
-            job2.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstTwo.class);
+            job2.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstOnly.class);
             job2.setSortComparatorClass(IntArrayWritable.DefaultComparator.class);
 
             // start job
@@ -309,7 +309,7 @@ public class NGAprioriScan extends Configured implements Tool {
             job3.setMapOutputValueClass(IntWritable.class);
             job3.setOutputKeyClass(IntArrayWritable.class);
             job3.setOutputValueClass(IntWritable.class);
-            job3.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstTwo.class);
+            job3.setPartitionerClass(IntArrayWritable.IntArrayWritablePartitionerFirstOnly.class);
             job3.setSortComparatorClass(IntArrayWritable.DefaultComparator.class);
 
             // start job

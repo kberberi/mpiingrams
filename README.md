@@ -1,18 +1,16 @@
 mpiingrams
 ==========
 
-# mpiingrams
-
 mpiingrams was created by the Databases and Information Systems Department
 at the Max Planck Institute for Informatics (http://www.mpi-inf.mpg.de). It 
 provides implementations of different methods to compute n-gram statistics
 using Apache Hadoop. For a detailed description of the methods and an
 experimental comparison of them on different datasets, please refer to:
 
-Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce,\
-Proceedings of 16th International Conference on Extending Database Technology (EDBT 2013),
-2013
-http://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf
+    Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce,
+    In Proceedings of 16th International Conference on Extending Database Technology (EDBT 2013),
+    2013
+    http://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf
 
 ## Input Conversion
 
