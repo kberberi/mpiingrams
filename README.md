@@ -12,7 +12,7 @@ Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce,
 ## Input Conversion
 
 Our implementation expects its input in a specific format that consists of a 
-dictionary, mapping words to identifiers and their collection frequency, as 
+dictionary, mapping words to identifiers and their counts, as 
 well as documents compactly encoded as integer sequences.
 
 We provide a tool (`de.mpii.ngrams.io.ConvertText2Input) to convert plain-text

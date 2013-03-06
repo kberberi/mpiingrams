@@ -98,7 +98,12 @@ public class NGAprioriScan extends Configured implements Tool {
             int[] contents = value.getContents();
             for (int b = 0; b < contents.length - k + 1; b++) {
 
-                if (k > 1) {
+                if (k == 1) {
+                    outKey.setContents(contents, b, b + 1);
+                    if (!dict.contains(outKey)) {
+                        continue;
+                    }
+                } else {
 
                     // left (m-1)-gram
                     outKey.setContents(contents, b, b + k - 1);
