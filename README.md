@@ -54,7 +54,7 @@ from Project Gutenberg at the time of writing this documentation) stored in
 
 To compute statistics for all n-grams that occur at least five times
 (i.e., tau = 5) and have length at most ten (i.e., sigma = 10) using our
-suffix-based method with 32 reducers, invoke:
+suffix-based method with 4 reducers, invoke:
 
     hadoop jar de.mpii.ngrams.methods.NGSuffixSigma input output 5 10 0 4
 
