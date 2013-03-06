@@ -8,9 +8,8 @@ using Apache Hadoop. For a detailed description of the methods and an
 experimental comparison of them on different datasets, please refer to:
 
     Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce,
-    In Proceedings of 16th International Conference on Extending Database Technology (EDBT 2013),
-    2013
-    http://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf
+    Proceedings of 16th International Conference on Extending Database Technology (EDBT 2013)
+    [PDF](http://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf)
 
 ## Input Conversion
 
@@ -18,7 +17,7 @@ Our implementation expects its input in a specific format that consists of a
 dictionary, mapping words to identifiers and their collection frequency, as 
 well as documents compactly encoded as integer sequences.
 
-We provide a tool (de.mpii.ngrams.io.ConvertText2Input) to convert plain-text
+We provide a tool (`de.mpii.ngrams.io.ConvertText2Input) to convert plain-text
 data into this format. This converter removes all non-alphanumeric characters
 from the input, treats white spaces as word separators, and newlines as
 sentence boundaries.
@@ -28,13 +27,12 @@ into the format expected by our implementation.
 
 ## Computing n-Gram Statistics
 
-We provide four different implementations (NGSuffixSigma, NGNaive, NGAprioriScan, 
-NGAprioriIndex) to compute n-gram statistics. We strongly recommend that you use
-NGSuffixSigma, which has been shown in our experiments to be the most robust
+We provide four different implementations (`NGSuffixSigma`, `NGNaive`, `NGAprioriScan`, 
+`NGAprioriIndex`) to compute n-gram statistics. We strongly recommend that you use
+`NGSuffixSigma`, which has been shown in our experiments to be the most robust
 among the methods. All methods expect the same parameters and are invoked as follows:
 
-hadoop jar de.mpii.ngrams.methods.{NGSuffixSigma, NGNaive, NGAprioriScan, NGAprioriIndex}\
- <input> <output> <minimum_support> <maximum_length> <type> <number_of_reducers>
+    `hadoop jar de.mpii.ngrams.methods.{NGSuffixSigma, NGNaive, NGAprioriScan, NGAprioriIndex} <input> <output> <minimum_support> <maximum_length> <type> <number_of_reducers>`
 
 <input> : the HDFS path with your dataset converted into our integer-sequence format
 <output> : the HDFS path where you would like to store the computed n-gram statistics
