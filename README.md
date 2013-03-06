@@ -7,7 +7,7 @@ provides implementations of different methods to compute n-gram statistics
 using Apache Hadoop. For a detailed description of the methods and an
 experimental comparison of them on different datasets, please refer to our paper:
 
-Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce, In Proceedings of 16th International Conference on Extending Database Technology (EDBT 2013) [PDF](http://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf)
+Klaus Berberich and Srikanta Bedathur: Computing n-Gram Statistics in MapReduce, In Proceedings of 16th International Conference on Extending Database Technology (EDBT 2013) [[PDF]](http://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf)
 
 ## Input Conversion
 
@@ -32,12 +32,12 @@ among the methods. All methods expect the same parameters and are invoked as fol
 
     hadoop jar de.mpii.ngrams.methods.{NGSuffixSigma, NGNaive, NGAprioriScan, NGAprioriIndex} <input> <output> <minimum_support> <maximum_length> <type> <number_of_reducers>
 
-* `input`: the HDFS path with your dataset converted into our integer-sequence format
-* `output`: the HDFS path where you would like to store the computed n-gram statistics
-* `minimum_support` : your choice of the minimum support \tau
-* `maximum_length`: your choice of the maximum length \sigma (use 0 for non-restricted length)
-* `type`: indicates whether you want to compute statistics for all (0), closed (1), or maximal (2) n-grams
-* `number_of_reducers`: the number of reducers that you want to use
+* `input` the HDFS path with your dataset converted into our integer-sequence format
+* `output` the HDFS path where you would like to store the computed n-gram statistics
+* `minimum_support` your choice of the minimum support \tau
+* `maximum_length` your choice of the maximum length \sigma (use 0 for non-restricted length)
+* `type` indicates whether you want to compute statistics for all (0), closed (1), or maximal (2) n-grams
+* `number_of_reducers` the number of reducers that you want to use
 
 ## Output Conversion
 
